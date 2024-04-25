@@ -13,6 +13,7 @@ while erros < 6 and "_" in segredo:
     print(f"{segredo}\nerros: {erros}")
     letra = input("Informe a letra: ").lower()
     chutadas = chutadas + letra
+    print(chutadas)
 
     segredo = ""
     for c in sorteada:
