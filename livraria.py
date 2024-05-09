@@ -51,14 +51,13 @@ def altera_exclui(lista, pos, opcao):
 
 op = menu()
 livros = []
-pos = []
 while op!= 3:
     if op == 1:
         insere_livro(livros)
         print(livros)
     elif op == 2:
-        op2 = lista_livros(livros)
-        print(f"Selecionado livro: {livros[op2]}")
+        pos = lista_livros(livros)
+        print(f"Selecionado livro: {livros[pos]}")
         acao = submenu()
         altera_exclui(livros, pos, acao)
     op = menu()
